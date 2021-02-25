@@ -1,7 +1,7 @@
 import { FaArrowAltCircleLeft } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 
-export default function App() {
+export default function About() {
   return (
     <>
       <div className="NAME">
@@ -16,7 +16,7 @@ export default function App() {
           <h5>Software, media and branding professional. Lover of experiences digital and physical and creator of full stack applications.</h5>
           <p>California born and raised</p>
           <br/>
-          <p>ldkfjha;sdl ; skldfj ;sd ;faslk df;lkas djf ;lsakdj f sf; sa;ldj f;lksj dfl;k;l skdjf;l as;l s dlfk;alsh f sad fhalskjhflk sdjklf ;sdf;lk as;lkf ; sdhlf ;lasdkj f;lks d;flk ;as f;ls f;lh sd;fh ;jdsh f;kdjshsjkdhf sad;hfk sa f;lhsadlkfheoi hr8oh fiourho r goi roics dhvh ds ffhs </p>
+          <p>I appreciate things that feel like they make sense. Whether thats a whiskey neat at a dive bar, a scented candle at a yoga class, or a short rib grilled cheese sandwhich. </p>
           <a href="https://drive.google.com/file/d/122vC6CgYJJ8k8qCXzwx6vj3r-I0d2Ilm/view?usp=sharing" target="_blank" rel="noreferrer">
             <span>RESUME</span>
           </a>
