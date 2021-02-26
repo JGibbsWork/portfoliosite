@@ -90,12 +90,14 @@ a:hover {
 .software{
   margin: auto;
   width: auto;
-  padding-top: 12%;
+  padding-top: 10%;
 }
 
 .pageConatiner {
   background-color: black;
   z-index: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
 }
 .pageBox {
@@ -155,16 +157,30 @@ img{
   padding: 10px;
 }
 
+.ABOUT{
+  margin: auto;
+  width: 70%;
+  padding-top: 5%;
+}
+
 .aboutTitle{
-  margin-left: 22%;
+  margin-left: 32%;
   font-size: 5rem;
   margin-top: 0;
 }
 
 .aboutMe{
   margin: 5%;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   justify-content: center;
+}
+
+P.aboutMe{
+  font-size: large;
+}
+
+h4.aboutMe{
+  font-size: larger;
 }
 
 .resume{
