@@ -6,20 +6,21 @@ export default function About() {
     <>
       <div className="NAME">
         <div className="pageConatiner">
-        <Link
-              to={{ pathname: '/' }}
-              style={{ textDecoration: "none"}}
-              className="link" >
-                < FaArrowAltCircleLeft />
+          <Link
+            to={{ pathname: '/' }}
+            style={{ textDecoration: "none"}}
+            className="link" >
+                < FaArrowAltCircleLeft className="back" size="1.5rem"/>
           </Link>
-          <h2>WHO IS SHE?</h2>
-          <h5>Software, media and branding professional. Lover of experiences digital and physical and creator of full stack applications.</h5>
-          <p>California born and raised</p>
-          <br/>
-          <p>I appreciate things that feel like they make sense. Whether thats a whiskey neat at a dive bar, a scented candle at a yoga class, or a short rib grilled cheese sandwhich. </p>
-          <a href="https://drive.google.com/file/d/122vC6CgYJJ8k8qCXzwx6vj3r-I0d2Ilm/view?usp=sharing" target="_blank" rel="noreferrer">
-            <span>RESUME</span>
+          <a href="https://drive.google.com/file/d/122vC6CgYJJ8k8qCXzwx6vj3r-I0d2Ilm/view?usp=sharing" target="_blank" rel="noreferrer" >
+            <span className="resume">RESUME</span>
           </a>
+          <h2 className="aboutTitle">HEY THERE</h2>
+          <div className="aboutMe">
+            <h4>Software, media and branding professional. Lover of experiences digital and physical and creator of full stack applications.</h4>
+            <p>I'm a firm believer of the small details most peole overlook being the real magic of a product. </p>
+            <p>I appreciate things that feel like they make sense. </p>
+          </div>
         </div>
       </div>
     </>
