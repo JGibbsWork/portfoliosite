@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithubSquare, FaEnvelope } from 'react-icons/fa';
 export default function Home() {
   return (
     <>
-      <div className="NAME">
+      <div className="Home">
         <div className="homeBox">
           <div className="myName">
             <span className="hometext">James <br/>
@@ -35,19 +35,19 @@ export default function Home() {
             </div>
           </div>
           <div className="iconLinks" >
-            <div className="icons">
+            <div className="icons" id="homeLink">
               <a href="https://www.linkedin.com/in/jgibbswork/" target="_blank" rel="noreferrer">
-                <FaLinkedin size="2rem" />
+                <FaLinkedin />
               </a>
             </div>
-            <div className="icons">
+            <div className="icons" id="homeLink">
               <a href="https://github.com/JGibbsWork" target="_blank" rel="noreferrer" >
-                <FaGithubSquare size="2rem" />
+                <FaGithubSquare  />
               </a>
             </div>
-            <div className="icons">
+            <div className="icons" id="homeLink">
               <a href="mailto: james.gibbs@me.com" target="_blank" rel="noreferrer">
-                <FaEnvelope size="2rem"/>
+                <FaEnvelope />
               </a>
             </div>
           </div>
