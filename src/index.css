@@ -49,7 +49,7 @@ a:hover {
     width: 52%;
     padding-top: 15%;
   }
-  
+
   .homeBox{
     background-color: BLACK;
     display: flex;
@@ -73,7 +73,7 @@ a:hover {
   #homeLink{
     font-size: 2vw;
   }
-  
+
   .iconLinks {
     display: flex;
     flex-direction: row;
@@ -89,20 +89,21 @@ a:hover {
     width: auto;
     padding-top: 10%;
   }
-  
+
   .software{
     margin: auto;
     width: auto;
     padding-top: 10%;
   }
-  
+
   .pageConatiner {
     background-color: black;
     z-index: 1;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    overflow-y: 'scroll';
   }
-  
+
   .pageBox {
     display: flex;
     flex-direction: row;
@@ -111,16 +112,17 @@ a:hover {
     flex-grow: 0;
   }
 
+
   iframe{
     width: 90%;
     padding-top: 1.5vw;
     padding-bottom: 0.7vw;
   }
-  
+
   img{
     width:90%;
   }
-  
+
   .pageOne {
     flex-basis: 25%;
     flex-grow: 0;
@@ -131,29 +133,53 @@ a:hover {
     flex-grow: 0;
     justify-content: center;
   }
-  
+
   .pageThree {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
   }
 
+  .SpageOne {
+    flex-basis: 25%;
+    flex-grow: 0;
+    justify-content: center;
+  }
+  .SpageTwo {
+    flex-basis: 25%;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  .SpageThree {
+    flex-basis: 25%;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  .SpageFour {
+    flex-basis: 25%;
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+
   .title{
     font-size: 4vw;
     justify-content: center;
   }
-  
+
   .Creatitle{
     font-size: 2vw;
     justify-content: center;
   }
-  
+
   .titleBox{
     display: flex;
     flex-direction: row;
     padding-right: 3rem;
   }
-  
+
   .linkTest{
     padding-left: 1.5rem;
   }
@@ -163,7 +189,7 @@ a:hover {
     width: 83%;
     padding-top: 3%;
   }
-  
+
   .aboutTitle{
     margin-left: 32%;
     font-size: 5vw;
@@ -182,26 +208,26 @@ a:hover {
   .icons{
     padding-right: 1rem;
   }
-  
-  
-  
+
+
+
   .aboutMe{
     margin: 3%;
     justify-content: center;
   }
-  
+
   P.aboutMe{
     font-size: 1.3vw;
   }
-  
+
   h4.aboutMe{
     font-size: 1.4vw;
   }
-  
+
 }
 
 @media (orientation: portrait) {
- 
+
   h3{
     margin: 3%;
     font-size: 2.8vw;
@@ -212,14 +238,14 @@ a:hover {
     width: 65%;
     padding-top: 40%;
   }
-  
+
   .homeBox{
     background-color: BLACK;
     display: flex;
     flex-direction: column;
     padding: 1.2vw;
   }
-  
+
   .hometext{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14vw;
@@ -237,7 +263,7 @@ a:hover {
   #homeLink{
     font-size: 5vw;
   }
-  
+
   .iconLinks {
     display: flex;
     flex-direction: row;
@@ -253,20 +279,20 @@ a:hover {
     width: auto;
     padding-top: 10%;
   }
-  
+
   .software{
     margin: auto;
     width: auto;
     padding-top: 5%;
   }
-  
+
   .pageConatiner {
     background-color: black;
     z-index: 1;
     padding-top: 2%;
     padding-bottom: 1.5rem;
   }
-  
+
   .pageBox {
     display: flex;
     flex-direction: column;
@@ -279,12 +305,12 @@ a:hover {
     width: calc(50% - 20px);
     height: calc((50vw - 20px) * 0.5625);
   }
-  
+
   img{
     width: calc(50% - 20px);
     height: calc((50vw - 20px) * 0.5625);
   }
-  
+
   .pageVert{
     display: flex;
   }
@@ -303,14 +329,14 @@ a:hover {
     justify-content: center;
     padding-bottom: 5%;
   }
-  
+
   .pageTwo {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
     padding-bottom: 5%;
   }
-  
+
   .pageThree {
     flex-basis: 25%;
     flex-grow: 0;
@@ -322,18 +348,18 @@ a:hover {
     font-size: 10vw;
     justify-content: center;
   }
-  
+
   .Creatitle{
     font-size: 5vw;
     justify-content: center;
   }
-  
+
   .titleBox{
     display: flex;
     flex-direction: row;
     padding-right: 3rem;
   }
-  
+
   .linkTest{
     padding-left: 1.5rem;
   }
@@ -343,7 +369,7 @@ a:hover {
     width: 78%;
     padding-top: 15%;
   }
-  
+
   .aboutTitle{
     margin-left: 17%;
     font-size: 9vw;
@@ -363,21 +389,21 @@ a:hover {
   .icons{
     padding-right: 1rem;
   }
-  
+
   .aboutMe{
     margin: 3%;
     justify-content: center;
     padding-top: 1vw;
     padding-bottom: 2vw;
   }
-  
+
   P.aboutMe{
     font-size: 2.8vw;
   }
-  
+
   h4.aboutMe{
     font-size: 3.5vw;
   }
-  
+
 }
 

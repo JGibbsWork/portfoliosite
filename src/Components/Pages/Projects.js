@@ -1,5 +1,6 @@
 import { FaArrowAltCircleLeft, FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 import { Link } from 'react-router-dom';
+import INTRSPCT from '../../Assets/gifs/INTRSPCT.gif';
 import Ink from '../../Assets/gifs/InkU.gif';
 import FEI from '../../Assets/gifs/FEIU.gif';
 import Gamet from '../../Assets/gifs/GametU.gif';
@@ -17,7 +18,7 @@ export default function Software() {
                 < FaArrowAltCircleLeft className="back" size="1.5rem"/>
           </Link>
           <div className="pageBox">
-            <div className="pageOne">
+            <div className="SpageOne">
               <span className="title">Inkorporate</span>
               <a href="https://inkrprate.herokuapp.com/" target="_blank" rel="noreferrer" className="linkTest"> <FaExternalLinkAlt size="2rem"/></a>
               <br/>
@@ -31,7 +32,20 @@ export default function Software() {
                 </div>
               </div>
             </div>
-            <div className="pageTwo">
+            <div className="SpageTwo">
+              <span className="title">INTRSPCT Tarot</span>
+              <br/>
+              <div className="pageVert">
+                <img src={INTRSPCT} border='0' alt='scroll through of mobile app with tarot cards'/>
+                <br/>
+                <div className="pageVertText">
+                    <p className="pageVertText">Designed ground up build of React Native Expo application</p>
+                    <p className="pageVertText">Created 78 unique QR based tarot cards with matching functionality to display meaning of each card in the application</p>
+                    <p className="pageVertText">Managed data flow from printed product to end library to provide a novel way to do tarot readings</p>
+                </div>
+              </div>
+            </div>
+            <div className="SpageThree">
                 <span className="title">FEI</span>
                 <a href="https://fei-reviews.herokuapp.com/" target="_blank" rel="noreferrer" className="linkTest"><FaExternalLinkAlt size="2rem"/></a>
                 <a href="https://github.com/JGibbsWork/reviewFEI" target="_blank" rel="noreferrer" className="linkTest"><FaGithub size="2rem"/></a>
@@ -46,7 +60,7 @@ export default function Software() {
                 </div>
               </div>
             </div>
-            <div className="pageThree">
+            <div className="SpageFour">
               <span className="title">Gamet</span>
               <br/>
               <div className="pageVert">
