@@ -33,7 +33,7 @@ export default function Software() {
               </div>
             </div>
             <div className="SpageTwo">
-              <span className="title">INTRSPCT Tarot</span>
+              <span className="title">INTRSPCT</span>
               <br/>
               <div className="pageVert">
                 <img src={INTRSPCT} border='0' alt='scroll through of mobile app with tarot cards'/>
