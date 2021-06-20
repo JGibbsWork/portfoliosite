@@ -49,7 +49,7 @@ export default function Creative() {
                 allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
                 <div className="pageVertText">
-                  <p className="pageVertText">Conceptualized and created Lyric Videos, along with accompanying social media assets, for songs released by independent artists Royal Teeth (Round Hill Records) and Post Precious (side project of Max Hershenow of MS MR + veteran singer/songwriter Alex Winston) and Yoke Lore</p>
+                  <p className="pageVertText">Conceptualized and created Lyric Videos, along with accompanying social media assets, for songs released by independent artists Royal Teeth (Round Hill Records), Post Precious (side project of Max Hershenow of MS MR + veteran singer/songwriter Alex Winston) and Yoke Lore</p>
                   <p className="pageVertText">Ranging from singles and albums to visuals for Karaoke-themed listening parties</p>
                 </div>
               </div>
