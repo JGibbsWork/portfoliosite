@@ -34,6 +34,7 @@ export default function Software() {
             </div>
             <div className="SpageTwo">
               <span className="title">INTRSPCT</span>
+              <a href="https://github.com/JGibbsWork/tarotQrApp" target="_blank" rel="noreferrer" className="linkTest"><FaGithub size="2rem"/></a>
               <br/>
               <div className="pageVert">
                 <img src={INTRSPCT} border='0' alt='scroll through of mobile app with tarot cards'/>
