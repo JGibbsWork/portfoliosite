@@ -144,23 +144,31 @@ a:hover {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
   .SpageTwo {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
 
   .SpageThree {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
 
   .SpageFour {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
 
 
@@ -319,8 +327,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     font-size: 2.1vw;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .pageOne {
