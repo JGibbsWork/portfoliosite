@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Background from '../Sketches/Background.js'
 
 import Home from '../Pages/Home.js'
@@ -10,12 +10,12 @@ export default function AppRouter () {
   return (
     <Router>
       <Background />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/projects" component={Projects} />
-            <Route exact path="/creative" component={Creative} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={Home()} />
+            <Route path="/about" element={About()} />
+            <Route path="/projects" element={Projects()} />
+            <Route path="/creative" element={Creative()} />
+          </Routes>
     </Router>
   )
 }

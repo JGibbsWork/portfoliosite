@@ -15,7 +15,7 @@ export default function About() {
           <h2 className="aboutTitle">HEY THERE</h2>
           <div className="aboutMe">
             <h4 className="aboutMe">Software, media, and branding professional. Lover of refined experiences digital and physical. Creator of full stack applications.</h4>
-            <p className="aboutMe">I'm a fan of things that feel like they make sense. While I cut my teeth in Hospitality and media, I have recently gravitated toward Software Development. I know how and when to be using specific technologies. Whether creating RESTful APIs with Express, choosing the right database option, building a front end React application, or building for scale and load balancing with Nginx, I can handle a variety of challenges for your team.</p>
+            <p className="aboutMe">I'm a fan of things that feel like they make sense. While I cut my teeth in Hospitality and media, I now work in the Software Engineering space. This mix of background career experience gives me a different perspective on how to approach problems and how to consider solutions. I have contributed to open source projects and am currently employed in the FinTech space.</p>
             <p className="aboutMe">To see a few examples of software projects I've worked on check here: <Link
             to={{ pathname: '/projects' }}
             style={{ textDecoration: "none"}}
@@ -29,7 +29,7 @@ export default function About() {
             className="link" >
                 <span>CREATIVE PROJECTS</span>
           </Link></p>
-          <h3>Want to see more? Check out my resume here: <a href="https://drive.google.com/file/d/122vC6CgYJJ8k8qCXzwx6vj3r-I0d2Ilm/view?usp=sharing" target="_blank" rel="noreferrer" >RESUME</a></h3>
+          <h3>Want to see more? Check out my resume here: <a href="https://drive.google.com/file/d/146WfBKp13_-PpxUoOd_gqOorx8FMdZWN/view?usp=sharing" target="_blank" rel="noreferrer" >RESUME</a></h3>
           </div>
         </div>
       </div>

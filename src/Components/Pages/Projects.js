@@ -20,7 +20,6 @@ export default function Software() {
           <div className="pageBox">
             <div className="SpageOne">
               <span className="title">Inkorporate</span>
-              <a href="https://inkrprate.herokuapp.com/" target="_blank" rel="noreferrer" className="linkTest"> <FaExternalLinkAlt size="2rem"/></a>
               <br/>
               <div className="pageVert">
                 <img src={Ink} border='0' alt='scroll through of web app'/>
@@ -48,7 +47,6 @@ export default function Software() {
             </div>
             <div className="SpageThree">
                 <span className="title">FEI</span>
-                <a href="https://fei-reviews.herokuapp.com/" target="_blank" rel="noreferrer" className="linkTest"><FaExternalLinkAlt size="2rem"/></a>
                 <a href="https://github.com/JGibbsWork/reviewFEI" target="_blank" rel="noreferrer" className="linkTest"><FaGithub size="2rem"/></a>
               <br/>
               <div className="pageVert">
