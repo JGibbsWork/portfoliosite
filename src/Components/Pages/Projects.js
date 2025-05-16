@@ -1,9 +1,8 @@
-import { FaArrowAltCircleLeft, FaExternalLinkAlt, FaGithub } from "react-icons/fa"
+import { FaArrowAltCircleLeft, FaExternalLinkAlt, FaGithub, FaSpotify } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import INTRSPCT from '../../Assets/gifs/INTRSPCT.gif';
-import Ink from '../../Assets/gifs/InkU.gif';
-import FEI from '../../Assets/gifs/FEIU.gif';
-import Gamet from '../../Assets/gifs/GametU.gif';
+import Playlister from '../../Assets/stills/Playlister.png';
+import Dashboard from '../../Assets/stills/Dashboard.jpeg';
 
 
 export default function Software() {
@@ -19,19 +18,35 @@ export default function Software() {
           </Link>
           <div className="pageBox">
             <div className="SpageOne">
-              <span className="title">Inkorporate</span>
+              <span className="title">AO Playlists</span>
+              <a href="https://open.spotify.com/user/315o6js2bgmqotzowgyhnoyz5t24" target="_blank" rel="noreferrer" className="linkTest"><FaSpotify size="2rem"/></a>
               <br/>
               <div className="pageVert">
-                <img src={Ink} border='0' alt='scroll through of web app'/>
+                <img src={Playlister} border='0' alt='scroll through of web app'/>
                 <br/>
                 <div className="pageVertText">
-                    <p className="pageVertText">Implemented React Router to allow data persistence throughout page navigation</p>
-                    <p className="pageVertText">Created Post-View module in React to display details on products used and photos of finished tattoo work</p>
-                    <p className="pageVertText">Created put functionality using axios to update RESTful API allowing user to keep track of updates to work</p>
+                    <p className="pageVertText">Developed a Node.js server utilizing Puppeteer to scrape upcoming show information and automatically organize content into Spotify playlists</p>
+                    <p className="pageVertText">Leveraged the Spotify API to generate dynamic, venue-specific playlists, creating a seamless user experience for venue discovery and music exploration</p>
+                    <p className="pageVertText">Implemented MongoDB to store upcoming show data, enabling future enhancements such as personalized recommendations and user-specific alerts.</p>
                 </div>
               </div>
             </div>
             <div className="SpageTwo">
+              <span className="title">Home Dash</span>
+              <br/>
+              <div className="pageVert">
+                <div style={{ filter: "blur(0.5px) contrast(1.2)" }}>
+                  <img src={Dashboard} border='0' alt='scroll through of mobile app with tarot cards'/>
+                </div>
+                <br/>
+                <div className="pageVertText">
+                    <p className="pageVertText">Developed a modular React UI to dynamically display curated content across multiple canvases within a single space, transforming walls into data-driven visual displays</p>
+                    <p className="pageVertText">Automated content transitions throughout the day, featuring artwork, transit updates, calendar events, Habitica tasks, to-do lists, weather, and time</p>
+                    <p className="pageVertText">Integrated APIs from CTA, Art Institute of Chicago, Habitica, Google Calendar, and OpenWeather to provide real-time updates and maintain contextual relevance</p>
+                </div>
+              </div>
+            </div>
+             <div className="SpageFour">
               <span className="title">INTRSPCT</span>
               <a href="https://github.com/JGibbsWork/tarotQrApp" target="_blank" rel="noreferrer" className="linkTest"><FaGithub size="2rem"/></a>
               <br/>
@@ -42,33 +57,6 @@ export default function Software() {
                     <p className="pageVertText">Designed ground up build of React Native Expo application</p>
                     <p className="pageVertText">Created 78 unique QR based tarot cards with matching functionality to display meaning of each card in the application</p>
                     <p className="pageVertText">Managed data flow from printed product to end library to provide a novel way to do tarot readings</p>
-                </div>
-              </div>
-            </div>
-            <div className="SpageThree">
-                <span className="title">FEI</span>
-                <a href="https://github.com/JGibbsWork/reviewFEI" target="_blank" rel="noreferrer" className="linkTest"><FaGithub size="2rem"/></a>
-              <br/>
-              <div className="pageVert">
-                <img src={FEI} border='0' alt='scroll through of web app'/>
-                <br/>
-                <div className="pageVertText">
-                  <p className="pageVertText">Created fullstack review component to dynamically display reviews tied to a specific item</p>
-                  <p className="pageVertText">Implemented sorting algorithms to filter and sort content based on user selected parameters</p>
-                  <p className="pageVertText">Dockerized image to run a microservice on a webapp proxy on an AWS EC2 instance</p>
-                </div>
-              </div>
-            </div>
-            <div className="SpageFour">
-              <span className="title">Gamet</span>
-              <br/>
-              <div className="pageVert">
-                <img src={Gamet} border='0' alt='scroll through of notes'/>
-                <br/>
-                <div className="pageVertText">
-                  <p className="pageVertText">Benchmarked mongoDB and PostgreSQL API calls with 10 million data entries</p>
-                  <p className="pageVertText">Restructured database schema and data structure to bring response times from 6s to below 1ms locally</p>
-                  <p className="pageVertText">Scaled to 4 applications hosted on AWS EC2 instances and implemented an Nginx load balancer utilizing the round robin load balancing method to handle 1000 requests per second with a less than 1% error rate</p>
                 </div>
               </div>
             </div>
