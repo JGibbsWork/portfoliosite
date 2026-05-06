@@ -1,19 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+:root {
+  --teal: rgb(96, 204, 207);
+  --bg: #000000;
+  --surface: #0a0a0a;
+  --surface-alt: #1a1a1a;
+  --fg: #ffffff;
+  --fg-dim: rgb(210, 210, 210);
+  --fg-muted: rgb(200, 200, 200);
+  --silver: silver;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  color: var(--fg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:black;
+  background-color: var(--bg);
 }
 
 .link:hover {
-  color:rgb(96, 204, 207);
+  color: var(--teal);
 }
 
-#defaultCanvas0{
+#defaultCanvas0 {
   position: absolute;
-  float: top;
   z-index: -1;
 }
 
@@ -21,48 +33,59 @@ p {
   font-size: 1vw;
 }
 
-
-#defaultCanvas0{
-  position: absolute;
-  float: top;
-  z-index: -1;
-}
-
-a{
+a {
   text-decoration: none;
-  color:silver;
+  color: var(--silver);
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  color:rgb(96, 204, 207);
+  color: var(--teal);
+}
+
+.link {
+  transition: color 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @media (orientation: landscape) {
 
-  h3{
+  h3 {
     margin: 3%;
     font-size: 1.6vw;
   }
 
-  .Home{
+  .Home {
     margin: auto;
     width: 52%;
     padding-top: 15%;
   }
 
-  .homeBox{
-    background-color: BLACK;
+  .homeBox {
+    background-color: var(--bg);
     display: flex;
     padding: 1.2vw;
   }
 
-  .hometext{
-    font-family: Arial, Helvetica, sans-serif;
+  .hometext {
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-size: 5vw;
-    color: white;
+    color: var(--fg);
   }
 
-  .navLinks{
+  .homeSubtitle {
+    font-size: 1vw;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+  }
+
+  .navLinks {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -70,7 +93,7 @@ a:hover {
     font-size: 1.3vw;
   }
 
-  #homeLink{
+  #homeLink {
     font-size: 2vw;
   }
 
@@ -84,24 +107,25 @@ a:hover {
     justify-content: space-between;
   }
 
-  .creative{
+  .creative {
     margin: auto;
     width: auto;
     padding-top: 10%;
   }
 
-  .software{
+  .software {
     margin: auto;
     width: auto;
     padding-top: 10%;
   }
 
   .pageConatiner {
-    background-color: black;
+    background-color: var(--bg);
     z-index: 1;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    overflow-y: 'scroll';
+    overflow-y: scroll;
+    animation: fadeIn 0.35s ease forwards;
   }
 
   .pageBox {
@@ -112,15 +136,14 @@ a:hover {
     flex-grow: 0;
   }
 
-
-  iframe{
+  iframe {
     width: 90%;
     padding-top: 1.5vw;
     padding-bottom: 0.7vw;
   }
 
-  img{
-    width:90%;
+  img {
+    width: 90%;
   }
 
   .pageOne {
@@ -128,6 +151,7 @@ a:hover {
     flex-grow: 0;
     justify-content: center;
   }
+
   .pageTwo {
     flex-basis: 25%;
     flex-grow: 0;
@@ -147,6 +171,7 @@ a:hover {
     padding-left: 0.5%;
     padding-right: 0.5%;
   }
+
   .SpageTwo {
     flex-basis: 25%;
     flex-grow: 0;
@@ -171,84 +196,81 @@ a:hover {
     padding-right: 0.5%;
   }
 
-
-  .title{
+  .title {
     font-size: 4vw;
     justify-content: center;
   }
 
-  .Creatitle{
+  .Creatitle {
     font-size: 2vw;
     justify-content: center;
   }
 
-  .titleBox{
+  .titleBox {
     display: flex;
     flex-direction: row;
     padding-right: 3rem;
   }
 
-  .linkTest{
+  .linkTest {
     padding-left: 1.5rem;
   }
 
-  .ABOUT{
+  .ABOUT {
     margin: auto;
     width: 83%;
     padding-top: 3%;
   }
 
-  .aboutTitle{
+  .aboutTitle {
     margin-left: 32%;
     font-size: 5vw;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .back {
     padding: 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
   }
 
-  .resume{
+  .back:hover {
+    transform: translateX(-4px);
+    color: var(--teal);
+  }
+
+  .resume {
     padding: 10px;
     font-size: 1.3rem;
     float: right;
   }
-  .icons{
+
+  .icons {
     padding-right: 1rem;
   }
 
-
-
-  .aboutMe{
+  .aboutMe {
     margin: 3%;
     justify-content: center;
   }
 
-  P.aboutMe{
+  P.aboutMe {
     font-size: 1.3vw;
   }
 
-  h4.aboutMe{
+  h4.aboutMe {
     font-size: 1.4vw;
-  }
-
-  /* Home subtitle */
-  .homeSubtitle {
-    font-size: 1vw;
-    color: rgb(96, 204, 207);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-top: 0.4em;
+    color: var(--teal);
   }
 
   /* Work page section dividers */
   .sectionLabel {
     font-size: 0.75vw;
     letter-spacing: 0.3em;
-    color: rgb(96, 204, 207);
+    color: var(--teal);
     text-transform: uppercase;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-    border-bottom: 1px solid rgb(96, 204, 207);
+    border-bottom: 1px solid var(--teal);
     margin-bottom: 1.5rem;
   }
 
@@ -263,8 +285,14 @@ a:hover {
   /* Software project cards */
   .projectCard {
     flex: 1;
-    background-color: #0a0a0a;
+    background-color: var(--surface);
     padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .projectCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(96, 204, 207, 0.08);
   }
 
   .projectCardHeader {
@@ -275,41 +303,41 @@ a:hover {
   }
 
   .projectInsight {
-    border-left: 3px solid rgb(96, 204, 207);
+    border-left: 3px solid var(--teal);
     padding-left: 0.8rem;
     margin: 0.8rem 0 1rem 0;
     font-size: 1vw;
     font-style: italic;
-    color: rgb(200, 200, 200);
+    color: var(--fg-muted);
     line-height: 1.5;
   }
 
   .projectDesc {
     font-size: 1vw;
     line-height: 1.7;
-    color: rgb(210, 210, 210);
+    color: var(--fg-dim);
   }
 
   .projectImagePlaceholder {
     width: 100%;
     height: 10vw;
-    background-color: #1a1a1a;
+    background-color: var(--surface-alt);
     margin: 1rem 0;
   }
 
   .projectStack {
     font-size: 0.75vw;
     font-style: italic;
-    color: silver;
+    color: var(--silver);
     margin-top: 0.8rem;
   }
 
   /* Community card */
   .communityCard {
     margin: 0 1.5rem 2rem 1.5rem;
-    background-color: #0a0a0a;
+    background-color: var(--surface);
     padding: 1.5rem;
-    border-left: 3px solid rgb(96, 204, 207);
+    border-left: 3px solid var(--teal);
   }
 
   .communityCardHeader {
@@ -325,7 +353,7 @@ a:hover {
 
   .communityRole {
     font-size: 0.85vw;
-    color: silver;
+    color: var(--silver);
     font-style: italic;
   }
 
@@ -333,39 +361,47 @@ a:hover {
 
 @media (orientation: portrait) {
 
-  h3{
+  h3 {
     margin: 3%;
     font-size: 2.8vw;
   }
 
-  .Home{
+  .Home {
     margin: auto;
     width: 65%;
     padding-top: 40%;
   }
 
-  .homeBox{
-    background-color: BLACK;
+  .homeBox {
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     padding: 1.2vw;
   }
 
-  .hometext{
-    font-family: Arial, Helvetica, sans-serif;
+  .hometext {
+    font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-size: 14vw;
     justify-content: center;
-    color: white;
+    color: var(--fg);
   }
 
-  .navLinks{
+  .homeSubtitle {
+    font-size: 2.8vw;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+  }
+
+  .navLinks {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 4vw;
     font-size: 5vw;
   }
 
-  #homeLink{
+  #homeLink {
     font-size: 5vw;
   }
 
@@ -379,23 +415,24 @@ a:hover {
     justify-content: space-between;
   }
 
-  .creative{
+  .creative {
     margin: auto;
     width: auto;
     padding-top: 10%;
   }
 
-  .software{
+  .software {
     margin: auto;
     width: auto;
     padding-top: 5%;
   }
 
   .pageConatiner {
-    background-color: black;
+    background-color: var(--bg);
     z-index: 1;
     padding-top: 2%;
     padding-bottom: 1.5rem;
+    animation: fadeIn 0.35s ease forwards;
   }
 
   .pageBox {
@@ -406,21 +443,21 @@ a:hover {
     flex-grow: 0;
   }
 
-  iframe{
+  iframe {
     width: calc(50% - 20px);
     height: calc((50vw - 20px) * 0.5625);
   }
 
-  img{
+  img {
     width: calc(50% - 20px);
     height: calc((50vw - 20px) * 0.5625);
   }
 
-  .pageVert{
+  .pageVert {
     display: flex;
   }
 
-  .pageVertText{
+  .pageVertText {
     display: flex;
     flex-direction: column;
     font-size: 2.1vw;
@@ -449,33 +486,33 @@ a:hover {
     padding-bottom: 5%;
   }
 
-  .title{
+  .title {
     font-size: 10vw;
     justify-content: center;
   }
 
-  .Creatitle{
+  .Creatitle {
     font-size: 5vw;
     justify-content: center;
   }
 
-  .titleBox{
+  .titleBox {
     display: flex;
     flex-direction: row;
     padding-right: 3rem;
   }
 
-  .linkTest{
+  .linkTest {
     padding-left: 1.5rem;
   }
 
-  .ABOUT{
+  .ABOUT {
     margin: auto;
     width: 78%;
     padding-top: 15%;
   }
 
-  .aboutTitle{
+  .aboutTitle {
     margin-left: 17%;
     font-size: 9vw;
     margin-top: 0;
@@ -484,49 +521,48 @@ a:hover {
 
   .back {
     padding: 5px;
+    transition: transform 0.2s ease, color 0.2s ease;
   }
 
-  .resume{
+  .back:hover {
+    transform: translateX(-4px);
+    color: var(--teal);
+  }
+
+  .resume {
     padding: 10px;
     font-size: 3vw;
     float: right;
   }
-  .icons{
+
+  .icons {
     padding-right: 1rem;
   }
 
-  .aboutMe{
+  .aboutMe {
     margin: 3%;
     justify-content: center;
     padding-top: 1vw;
     padding-bottom: 2vw;
   }
 
-  P.aboutMe{
+  P.aboutMe {
     font-size: 2.8vw;
   }
 
-  h4.aboutMe{
+  h4.aboutMe {
     font-size: 3.5vw;
-  }
-
-  /* Home subtitle */
-  .homeSubtitle {
-    font-size: 2.8vw;
-    color: rgb(96, 204, 207);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-top: 0.4em;
+    color: var(--teal);
   }
 
   /* Work page section dividers */
   .sectionLabel {
     font-size: 2.2vw;
     letter-spacing: 0.3em;
-    color: rgb(96, 204, 207);
+    color: var(--teal);
     text-transform: uppercase;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
-    border-bottom: 1px solid rgb(96, 204, 207);
+    border-bottom: 1px solid var(--teal);
     margin-bottom: 1.5rem;
   }
 
@@ -540,7 +576,7 @@ a:hover {
 
   /* Software project cards */
   .projectCard {
-    background-color: #0a0a0a;
+    background-color: var(--surface);
     padding: 1.5rem;
   }
 
@@ -552,41 +588,41 @@ a:hover {
   }
 
   .projectInsight {
-    border-left: 3px solid rgb(96, 204, 207);
+    border-left: 3px solid var(--teal);
     padding-left: 0.8rem;
     margin: 0.8rem 0 1rem 0;
     font-size: 2.8vw;
     font-style: italic;
-    color: rgb(200, 200, 200);
+    color: var(--fg-muted);
     line-height: 1.5;
   }
 
   .projectDesc {
     font-size: 2.8vw;
     line-height: 1.7;
-    color: rgb(210, 210, 210);
+    color: var(--fg-dim);
   }
 
   .projectImagePlaceholder {
     width: 100%;
     height: 30vw;
-    background-color: #1a1a1a;
+    background-color: var(--surface-alt);
     margin: 1rem 0;
   }
 
   .projectStack {
     font-size: 2.2vw;
     font-style: italic;
-    color: silver;
+    color: var(--silver);
     margin-top: 0.8rem;
   }
 
   /* Community card */
   .communityCard {
     margin: 0 1.5rem 2rem 1.5rem;
-    background-color: #0a0a0a;
+    background-color: var(--surface);
     padding: 1.5rem;
-    border-left: 3px solid rgb(96, 204, 207);
+    border-left: 3px solid var(--teal);
   }
 
   .communityCardHeader {
@@ -602,9 +638,8 @@ a:hover {
 
   .communityRole {
     font-size: 2.5vw;
-    color: silver;
+    color: var(--silver);
     font-style: italic;
   }
 
 }
-
