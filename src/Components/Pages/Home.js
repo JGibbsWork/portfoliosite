@@ -1,7 +1,34 @@
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithubSquare, FaEnvelope } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+
+const descriptors = [
+  'Senior Software Engineer',
+  'Experience Designer',
+  'Music Snob',
+  'Distant Relative of Paul Bunyon',
+  'Vibe Manager',
+  'Creative Technologist',
+  'Emergency DJ',
+  'Builder of Memories',
+  'Volunteer Coordinator',
+];
 
 export default function Home() {
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const cycle = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % descriptors.length);
+        setVisible(true);
+      }, 400); // wait for fade-out before swapping text
+    }, 2600);
+    return () => clearInterval(cycle);
+  }, []);
+
   return (
     <>
       <div className="Home">
@@ -9,7 +36,15 @@ export default function Home() {
           <div className="myName">
             <span className="hometext">James <br/>
             Gibbs</span>
-            <div className="homeSubtitle">Senior Software Engineer</div>
+            <div
+              className="homeSubtitle"
+              style={{
+                opacity: visible ? 1 : 0,
+                transition: 'opacity 0.4s ease',
+              }}
+            >
+              {descriptors[index]}
+            </div>
           </div>
           <div className="navLinks">
             <div>
@@ -58,4 +93,3 @@ export default function Home() {
     </>
   )
 }
-
