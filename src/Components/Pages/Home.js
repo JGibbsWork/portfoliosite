@@ -9,6 +9,7 @@ export default function Home() {
           <div className="myName">
             <span className="hometext">James <br/>
             Gibbs</span>
+            <div className="homeSubtitle">Senior Software Engineer</div>
           </div>
           <div className="navLinks">
             <div>
@@ -16,21 +17,21 @@ export default function Home() {
               to={{ pathname: '/about' }}
               style={{ textDecoration: "none"}}
               className="link" >
-                <h3>ABOUT ME</h3>
+                <h3>ABOUT</h3>
               </Link>
             </div>
             <div>
-              <Link to={{ pathname: '/projects'  }}
+              <Link to={{ pathname: '/work'  }}
               style={{ textDecoration: "none"}}
               className="link" >
-                <h3>SOFTWARE PROJECTS</h3>
+                <h3>WORK</h3>
               </Link>
             </div>
             <div>
               <Link to={{ pathname: '/creative' }}
               style={{ textDecoration: "none"}}
               className="link" >
-                <h3>CREATIVE PROJECTS</h3>
+                <h3>CREATIVE</h3>
               </Link>
             </div>
           </div>
