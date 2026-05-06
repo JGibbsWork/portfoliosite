@@ -232,6 +232,103 @@ a:hover {
     font-size: 1.4vw;
   }
 
+  /* Home subtitle */
+  .homeSubtitle {
+    font-size: 1vw;
+    color: rgb(96, 204, 207);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+  }
+
+  /* Work page section dividers */
+  .sectionLabel {
+    font-size: 0.75vw;
+    letter-spacing: 0.3em;
+    color: rgb(96, 204, 207);
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-bottom: 1px solid rgb(96, 204, 207);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Work page grid */
+  .workGrid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+
+  /* Software project cards */
+  .projectCard {
+    flex: 1;
+    background-color: #0a0a0a;
+    padding: 1.5rem;
+  }
+
+  .projectCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .projectInsight {
+    border-left: 3px solid rgb(96, 204, 207);
+    padding-left: 0.8rem;
+    margin: 0.8rem 0 1rem 0;
+    font-size: 1vw;
+    font-style: italic;
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+  }
+
+  .projectDesc {
+    font-size: 1vw;
+    line-height: 1.7;
+    color: rgb(210, 210, 210);
+  }
+
+  .projectImagePlaceholder {
+    width: 100%;
+    height: 10vw;
+    background-color: #1a1a1a;
+    margin: 1rem 0;
+  }
+
+  .projectStack {
+    font-size: 0.75vw;
+    font-style: italic;
+    color: silver;
+    margin-top: 0.8rem;
+  }
+
+  /* Community card */
+  .communityCard {
+    margin: 0 1.5rem 2rem 1.5rem;
+    background-color: #0a0a0a;
+    padding: 1.5rem;
+    border-left: 3px solid rgb(96, 204, 207);
+  }
+
+  .communityCardHeader {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .communityTitle {
+    font-size: 2vw;
+  }
+
+  .communityRole {
+    font-size: 0.85vw;
+    color: silver;
+    font-style: italic;
+  }
+
 }
 
 @media (orientation: portrait) {
@@ -411,6 +508,102 @@ a:hover {
 
   h4.aboutMe{
     font-size: 3.5vw;
+  }
+
+  /* Home subtitle */
+  .homeSubtitle {
+    font-size: 2.8vw;
+    color: rgb(96, 204, 207);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+  }
+
+  /* Work page section dividers */
+  .sectionLabel {
+    font-size: 2.2vw;
+    letter-spacing: 0.3em;
+    color: rgb(96, 204, 207);
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-bottom: 1px solid rgb(96, 204, 207);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Work page grid */
+  .workGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+
+  /* Software project cards */
+  .projectCard {
+    background-color: #0a0a0a;
+    padding: 1.5rem;
+  }
+
+  .projectCardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .projectInsight {
+    border-left: 3px solid rgb(96, 204, 207);
+    padding-left: 0.8rem;
+    margin: 0.8rem 0 1rem 0;
+    font-size: 2.8vw;
+    font-style: italic;
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+  }
+
+  .projectDesc {
+    font-size: 2.8vw;
+    line-height: 1.7;
+    color: rgb(210, 210, 210);
+  }
+
+  .projectImagePlaceholder {
+    width: 100%;
+    height: 30vw;
+    background-color: #1a1a1a;
+    margin: 1rem 0;
+  }
+
+  .projectStack {
+    font-size: 2.2vw;
+    font-style: italic;
+    color: silver;
+    margin-top: 0.8rem;
+  }
+
+  /* Community card */
+  .communityCard {
+    margin: 0 1.5rem 2rem 1.5rem;
+    background-color: #0a0a0a;
+    padding: 1.5rem;
+    border-left: 3px solid rgb(96, 204, 207);
+  }
+
+  .communityCardHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .communityTitle {
+    font-size: 6vw;
+  }
+
+  .communityRole {
+    font-size: 2.5vw;
+    color: silver;
+    font-style: italic;
   }
 
 }
