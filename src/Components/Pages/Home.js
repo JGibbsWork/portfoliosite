@@ -59,7 +59,7 @@ export default function Home() {
               <Link to={{ pathname: '/work'  }}
               style={{ textDecoration: "none"}}
               className="link" >
-                <h3>WORK</h3>
+                <h3>PROJECTS</h3>
               </Link>
             </div>
             <div>
