@@ -5,16 +5,20 @@ import Home from '../Pages/Home.js'
 import Work from '../Pages/Work.js';
 import About from '../Pages/About.js';
 import Creative from '../Pages/Creative.js';
+import Community from '../Pages/Community.js';
+import NotFound from '../Pages/NotFound.js';
 
 export default function AppRouter () {
   return (
     <Router>
       <Background />
           <Routes>
-            <Route path="/" element={Home()} />
-            <Route path="/about" element={About()} />
-            <Route path="/work" element={Work()} />
-            <Route path="/creative" element={Creative()} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/creative" element={<Creative />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
     </Router>
   )

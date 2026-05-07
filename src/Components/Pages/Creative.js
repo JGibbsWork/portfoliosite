@@ -5,11 +5,10 @@ import record from '../../Assets/stills/Record.jpg';
 
 export default function Creative() {
   return (
-    <>
       <div className="creative">
-        <div className="pageConatiner">
+        <div className="pageContainer">
           <Link
-            to={{ pathname: '/' }}
+            to="/"
             style={{ textDecoration: "none" }}
             className="link">
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
@@ -20,7 +19,7 @@ export default function Creative() {
             <div className="projectMeta">01</div>
             <div className="projectRowInner">
               <div className="projectImageWrap">
-                <img src={guitar} alt="LED guitar string installation" />
+                <img src={guitar} alt="LED guitar string installation" loading="lazy" />
               </div>
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Multimedia / AV Work</h2>
@@ -40,7 +39,7 @@ export default function Creative() {
             <div className="projectMeta">02</div>
             <div className="projectRowInner reverse">
               <div className="projectImageWrap">
-                <img src={record} alt="Record player setup" />
+                <img src={record} alt="Record player setup" loading="lazy" />
               </div>
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Music & Lifestyle Branding</h2>
@@ -72,6 +71,7 @@ export default function Creative() {
                   frameBorder="0"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
+                  loading="lazy"
                   style={{ width: '100%', aspectRatio: '16/9' }}
                 ></iframe>
               </div>
@@ -90,6 +90,5 @@ export default function Creative() {
 
         </div>
       </div>
-    </>
   )
 }

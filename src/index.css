@@ -49,6 +49,14 @@ a:hover {
   transition: color 0.2s ease;
 }
 
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+.link:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -74,6 +82,10 @@ a:hover {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
+  .myName {
+    flex-shrink: 0;
+  }
+
   .hometext {
     font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-size: 5vw;
@@ -81,13 +93,12 @@ a:hover {
   }
 
   .homeSubtitle {
+    position: absolute;
     font-size: 1vw;
     color: var(--teal);
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-top: 0.4em;
     white-space: nowrap;
-    min-width: 22vw;
   }
 
   .navLinks {
@@ -124,7 +135,7 @@ a:hover {
     padding-top: 3%;
   }
 
-  .pageConatiner {
+  .pageContainer {
     background-color: var(--bg);
     z-index: 1;
     padding-top: 1.5rem;
@@ -168,38 +179,6 @@ a:hover {
     flex-basis: 25%;
     flex-grow: 0;
     justify-content: center;
-  }
-
-  .SpageOne {
-    flex-basis: 25%;
-    flex-grow: 0;
-    justify-content: center;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-  }
-
-  .SpageTwo {
-    flex-basis: 25%;
-    flex-grow: 0;
-    justify-content: center;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-  }
-
-  .SpageThree {
-    flex-basis: 25%;
-    flex-grow: 0;
-    justify-content: center;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-  }
-
-  .SpageFour {
-    flex-basis: 25%;
-    flex-grow: 0;
-    justify-content: center;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
   }
 
   .title {
@@ -433,7 +412,7 @@ a:hover {
     color: var(--bg);
   }
 
-  /* Trivlio placeholder */
+  /* Trvlio placeholder */
   .trivlioPlaceholder {
     background-color: var(--surface);
     display: flex;
@@ -483,6 +462,11 @@ a:hover {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
+  .myName {
+    position: relative;
+    padding-bottom: 4vw;
+  }
+
   .hometext {
     font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
     font-size: 14vw;
@@ -491,13 +475,14 @@ a:hover {
   }
 
   .homeSubtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     font-size: 2.8vw;
     color: var(--teal);
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-top: 0.4em;
     white-space: nowrap;
-    min-width: 60vw;
   }
 
   .navLinks {
@@ -533,7 +518,7 @@ a:hover {
     padding-top: 15%;
   }
 
-  .pageConatiner {
+  .pageContainer {
     background-color: var(--bg);
     z-index: 1;
     padding-top: 2%;
@@ -551,13 +536,17 @@ a:hover {
   }
 
   iframe {
-    width: calc(50% - 20px);
-    height: calc((50vw - 20px) * 0.5625);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
   }
 
   img {
-    width: calc(50% - 20px);
-    height: calc((50vw - 20px) * 0.5625);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .pageVert {
@@ -820,7 +809,7 @@ a:hover {
     color: var(--bg);
   }
 
-  /* Trivlio placeholder - portrait */
+  /* Trvlio placeholder - portrait */
   .trivlioPlaceholder {
     background-color: var(--surface);
     display: flex;

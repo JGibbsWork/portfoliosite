@@ -30,7 +30,6 @@ export default function Home() {
   }, []);
 
   return (
-    <>
       <div className="Home">
         <div className="homeBox">
           <div className="myName">
@@ -49,21 +48,21 @@ export default function Home() {
           <div className="navLinks">
             <div>
               <Link
-              to={{ pathname: '/about' }}
+              to="/about"
               style={{ textDecoration: "none"}}
               className="link" >
                 <h3>ABOUT</h3>
               </Link>
             </div>
             <div>
-              <Link to={{ pathname: '/work'  }}
+              <Link to="/work"
               style={{ textDecoration: "none"}}
               className="link" >
                 <h3>PROJECTS</h3>
               </Link>
             </div>
             <div>
-              <Link to={{ pathname: '/creative' }}
+              <Link to="/creative"
               style={{ textDecoration: "none"}}
               className="link" >
                 <h3>CREATIVE</h3>
@@ -72,24 +71,23 @@ export default function Home() {
           </div>
           <div className="iconLinks" >
             <div className="icons" id="homeLink">
-              <a href="https://www.linkedin.com/in/jgibbswork/" target="_blank" rel="noreferrer">
-                <FaLinkedin />
+              <a href="https://www.linkedin.com/in/jgibbswork/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                <FaLinkedin aria-hidden="true" />
               </a>
             </div>
             <div className="icons" id="homeLink">
-              <a href="https://github.com/JGibbsWork" target="_blank" rel="noreferrer" >
-                <FaGithubSquare  />
+              <a href="https://github.com/JGibbsWork" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                <FaGithubSquare aria-hidden="true" />
               </a>
             </div>
             <div className="icons" id="homeLink">
-              <a href="mailto: james.gibbs@me.com" target="_blank" rel="noreferrer">
-                <FaEnvelope />
+              <a href="mailto:james.gibbs@me.com" target="_blank" rel="noreferrer" aria-label="Send email">
+                <FaEnvelope aria-hidden="true" />
               </a>
             </div>
           </div>
 
         </div>
       </div>
-    </>
   )
 }
