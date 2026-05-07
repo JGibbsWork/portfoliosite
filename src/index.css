@@ -111,6 +111,9 @@ button:focus-visible,
     margin-left: auto;
     padding-left: 4vw;
     font-size: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
   }
 
   #homeLink {
@@ -216,6 +219,13 @@ button:focus-visible,
     font-size: 5vw;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .pageTitle {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .back {
@@ -494,6 +504,9 @@ button:focus-visible,
     margin-bottom: auto;
     padding-left: 4vw;
     font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
   }
 
   #homeLink {
@@ -617,6 +630,13 @@ button:focus-visible,
     font-size: 9vw;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .pageTitle {
+    text-align: center;
+    font-size: 9vw;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .back {

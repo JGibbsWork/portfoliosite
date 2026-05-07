@@ -14,6 +14,7 @@ export default function Work() {
             className="link">
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
           </Link>
+            <h2 className="pageTitle">CODE</h2>
 
           {/* Trvlio */}
           <div className="projectRow">

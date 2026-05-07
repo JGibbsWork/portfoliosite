@@ -21,7 +21,7 @@ export default function About() {
                   to="/work"
                   style={{ textDecoration: "none" }}
                   className="link">
-                    <span>SOFTWARE PROJECTS</span>
+                    <span>CODE</span>
                 </Link></p>
                 <p className="aboutMe">I also coordinate volunteers for Pride Chicago, the largest all-volunteer Pride organization in the country — building up a structure that gives community members real ownership of the day and empowering 200+ people to make it shine.</p>
                 <p className="aboutMe">When I'm not doing that, I'm usually building something I wished already existed. Whether that's displaying a rotation of museum artwork through custom projection mapping, surfacing local venue picks through a Spotify bot, or getting travel recommendations from a multi-agent app I built myself — I love bringing new things into the world and making experiences feel alive.</p>
@@ -29,7 +29,7 @@ export default function About() {
                   to="/creative"
                   style={{ textDecoration: "none" }}
                   className="link">
-                    <span>CREATIVE PROJECTS</span>
+                    <span>CRAFT</span>
                 </Link></p>
                 <h3>Based in Chicago. Always in the middle of something. Let's see what we can make together — <a href="https://drive.google.com/file/d/146WfBKp13_-PpxUoOd_gqOorx8FMdZWN/view?usp=sharing" target="_blank" rel="noreferrer">RESUME</a></h3>
               </div>
