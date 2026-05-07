@@ -6,11 +6,10 @@ import Trivlio from '../../Assets/stills/Trivlio.jpg';
 
 export default function Work() {
   return (
-    <>
       <div className="software">
-        <div className="pageConatiner">
+        <div className="pageContainer">
           <Link
-            to={{ pathname: '/' }}
+            to="/"
             style={{ textDecoration: "none" }}
             className="link">
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
@@ -21,7 +20,7 @@ export default function Work() {
             <div className="projectMeta">01</div>
             <div className="projectRowInner">
               <div className="projectImageWrap">
-                <img src={Trivlio} alt="Trvlio recomendations" />
+                <img src={Trivlio} alt="Trvlio recommendations" loading="lazy" />
               </div>
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Trvlio</h2>
@@ -41,7 +40,7 @@ export default function Work() {
             <div className="projectMeta">02</div>
             <div className="projectRowInner reverse">
               <div className="projectImageWrap">
-                <img src={Playlister} alt="Amuse Orielle playlist interface" />
+                <img src={Playlister} alt="Amuse Orielle playlist interface" loading="lazy" />
               </div>
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Amuse Orielle</h2>
@@ -67,7 +66,7 @@ export default function Work() {
             <div className="projectMeta">03</div>
             <div className="projectRowInner">
               <div className="projectImageWrap">
-                <img src={Dashboard} alt="Home Dashboard display" style={{ filter: "blur(0.5px) contrast(1.2)" }} />
+                <img src={Dashboard} alt="Home Dashboard display" loading="lazy" style={{ filter: "blur(0.5px) contrast(1.2)" }} />
               </div>
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Home Dash</h2>
@@ -84,6 +83,5 @@ export default function Work() {
 
         </div>
       </div>
-    </>
   )
 }

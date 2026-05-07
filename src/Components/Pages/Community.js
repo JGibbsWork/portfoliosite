@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function Community() {
   return (
-    <>
       <div className="software">
-        <div className="pageConatiner">
+        <div className="pageContainer">
           <Link
-            to={{ pathname: '/' }}
+            to="/"
             style={{ textDecoration: "none" }}
             className="link">
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
@@ -35,6 +34,5 @@ export default function Community() {
 
         </div>
       </div>
-    </>
   )
 }

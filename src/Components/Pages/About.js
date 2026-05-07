@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
-    <>
       <div className="ABOUT">
-        <div className="pageConatiner">
+        <div className="pageContainer">
           <Link
-            to={{ pathname: '/' }}
+            to="/"
             style={{ textDecoration: "none" }}
             className="link">
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
@@ -19,7 +18,7 @@ export default function About() {
                 <p className="aboutMe">I cut my teeth at Hard Rock designing sensory environments and brokering global partnerships. Hundreds of custom playlists, AV automations, scent profiling, custom video content, and larger-scale productions like light shows across entire gaming floors. A brand partnership I built with Crosley Record Players called Wax won the company's best brand idea that year.</p>
                 <p className="aboutMe">I pivoted into software engineering at JPMorgan, where I've spent nearly five years working on a cloud-native platform used by millions of customers — focused on DevOps, internal tooling, and release engineering at Fortune 10 scale. That said, my free time has more interesting highlights.</p>
                 <p className="aboutMe">To see a few examples of my personal software projects check here: <Link
-                  to={{ pathname: '/work' }}
+                  to="/work"
                   style={{ textDecoration: "none" }}
                   className="link">
                     <span>SOFTWARE PROJECTS</span>
@@ -27,7 +26,7 @@ export default function About() {
                 <p className="aboutMe">I also coordinate volunteers for Pride Chicago, the largest all-volunteer Pride organization in the country — building up a structure that gives community members real ownership of the day and empowering 200+ people to make it shine.</p>
                 <p className="aboutMe">When I'm not doing that, I'm usually building something I wished already existed. Whether that's displaying a rotation of museum artwork through custom projection mapping, surfacing local venue picks through a Spotify bot, or getting travel recommendations from a multi-agent app I built myself — I love bringing new things into the world and making experiences feel alive.</p>
                 <p className="aboutMe">To see a few examples of the more creative projects I've taken on check here: <Link
-                  to={{ pathname: '/creative' }}
+                  to="/creative"
                   style={{ textDecoration: "none" }}
                   className="link">
                     <span>CREATIVE PROJECTS</span>
@@ -36,6 +35,5 @@ export default function About() {
               </div>
         </div>
       </div>
-    </>
   )
 }

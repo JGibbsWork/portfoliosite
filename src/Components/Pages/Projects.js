@@ -9,12 +9,12 @@ export default function Software() {
   return (
     <>
       <div className="software">
-        <div className="pageConatiner">
+        <div className="pageContainer">
           <Link
-              to={{ pathname: '/' }}
+              to="/"
               style={{ textDecoration: "none"}}
               className="link" >
-                < FaArrowAltCircleLeft className="back" size="1.5rem"/>
+                <FaArrowAltCircleLeft className="back" size="1.5rem"/>
           </Link>
           <div className="pageBox">
             <div className="SpageOne">
@@ -22,7 +22,7 @@ export default function Software() {
               <a href="https://open.spotify.com/user/315o6js2bgmqotzowgyhnoyz5t24" target="_blank" rel="noreferrer" className="linkTest"><FaSpotify size="2rem"/></a>
               <br/>
               <div className="pageVert">
-                <img src={Playlister} border='0' alt='scroll through of web app'/>
+                <img src={Playlister} alt='AO Playlists web app interface'/>
                 <br/>
                 <div className="pageVertText">
                     <p className="pageVertText">Developed a Node.js server utilizing Puppeteer to scrape upcoming show information and automatically organize content into Spotify playlists</p>
@@ -36,7 +36,7 @@ export default function Software() {
               <br/>
               <div className="pageVert">
                 <div style={{ filter: "blur(0.5px) contrast(1.2)" }}>
-                  <img src={Dashboard} border='0' alt='scroll through of mobile app with tarot cards'/>
+                  <img src={Dashboard} alt='Home Dashboard display interface'/>
                 </div>
                 <br/>
                 <div className="pageVertText">
@@ -51,7 +51,7 @@ export default function Software() {
               <a href="https://github.com/JGibbsWork/tarotQrApp" target="_blank" rel="noreferrer" className="linkTest"><FaGithub size="2rem"/></a>
               <br/>
               <div className="pageVert">
-                <img src={INTRSPCT} border='0' alt='scroll through of mobile app with tarot cards'/>
+                <img src={INTRSPCT} alt='INTRSPCT tarot card mobile app'/>
                 <br/>
                 <div className="pageVertText">
                     <p className="pageVertText">Designed ground up build of React Native Expo application</p>
