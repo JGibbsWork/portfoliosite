@@ -83,7 +83,9 @@ button:focus-visible,
   }
 
   .myName {
+    position: relative;
     flex-shrink: 0;
+    padding-bottom: 1.8vw;
   }
 
   .hometext {
@@ -94,6 +96,8 @@ button:focus-visible,
 
   .homeSubtitle {
     position: absolute;
+    bottom: 0;
+    left: 0;
     font-size: 1vw;
     color: var(--teal);
     letter-spacing: 0.15em;
