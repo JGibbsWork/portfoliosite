@@ -26,10 +26,10 @@ export default function Work() {
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Trvlio</h2>
                 <div className="projectInsight">
-                  "The best day in a new city isn't the most efficient one — it's the most intentional one."
+                  "The best day in a new city isn't the most efficient one. It's the most intentional one."
                 </div>
                 <p className="projectDesc">
-                  Most travel apps optimize for popularity. Trvlio optimizes for feel. Pick a city, set your dates, and answer a few quick questions about pace, budget, and general interests — then instead of a ranked list of buzzy spots, you get a day built around a neighborhood that actually matches your vibe. Dining, activities, and lodging clustered in one area so you leave actually knowing a place.
+                  Most travel apps optimize for popularity. Trvlio optimizes for feel. Pick a city, set your dates, and answer a few quick questions about pace, budget, and general interests. Instead of a ranked list of buzzy spots, you get a day built around a neighborhood that actually matches your vibe. Dining, activities, and lodging clustered in one area so you leave actually knowing a place.
                 </p>
                 <div className="projectStack">Node.js · Express · MongoDB · OpenAI · Amadeus · Google Places · Docker · Heroku</div>
                 <div className="projectLinks">
@@ -55,7 +55,7 @@ export default function Work() {
                   "Hear the room before you're in it."
                 </div>
                 <p className="projectDesc">
-                  Chicago's best venues don't just book shows — they have a sound, a taste, a scene that words can't quite capture. Amuse Orielle scrapes upcoming show listings and builds weekly Spotify playlists for each venue, so you can feel what a room is about before you walk in. Discover a new space, preview who's coming, and get a read on where the city's taste is heading.
+                  Chicago's best venues don't just book shows; they have a sound, a taste, a scene that words can't quite capture. Amuse Orielle scrapes upcoming show listings and builds weekly Spotify playlists for each venue, so you can feel what a room is about before you walk in. Discover a new space, preview who's coming, and get a read on where the city's taste is heading.
                 </p>
                 <div className="projectStack">Ollama · OpenAI · Spotify OAuth · MongoDB · GitHub Actions</div>
                 <div className="projectLinks">
@@ -81,7 +81,7 @@ export default function Work() {
                   "Any surface can be a canvas."
                 </div>
                 <p className="projectDesc">
-                  A custom projection mapping app that turns any surface — a blank wall, a mounted canvas, a TV — into an ambient art display. Pulls from the Art Institute of Chicago, the Met, and the Cleveland Museum of Art to rotate through curated collections, always alongside live weather and CTA transit times. Built to expand: swap in calendar events, to-do lists, or algorithmically generated art on a whim. Art and information that blend into your space instead of competing with it.
+                  A custom projection mapping app that turns any surface (a blank wall, a mounted canvas, a TV) into an ambient art display. Pulls from the Art Institute of Chicago, the Met, and the Cleveland Museum of Art to rotate through curated collections, always alongside live weather and CTA transit times. Built to expand: swap in calendar events, to-do lists, or algorithmically generated art on a whim. Art and information that blend into your space instead of competing with it.
                 </p>
                 <div className="projectStack">React · Art Institute of Chicago · Met Museum · Cleveland Museum · CTA · OpenWeather · Google Calendar</div>
               </div>
