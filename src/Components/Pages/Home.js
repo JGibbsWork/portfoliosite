@@ -80,7 +80,7 @@ export default function Home() {
               </a>
             </div>
             <div className="icons homeLink">
-              <a href="mailto:james.gibbs@me.com" target="_blank" rel="noreferrer" aria-label="Send email">
+              <a href="mailto:james.gibbs@me.com" aria-label="Send email">
                 <FaEnvelope aria-hidden="true" />
               </a>
             </div>
