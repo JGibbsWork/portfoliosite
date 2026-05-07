@@ -12,7 +12,7 @@ export default function sketch(p){
     p.background(0);
     p.angleMode(p.DEGREES)
     p.noiseDetail(2)
-    let density = 80;
+    let density = 50;
     let space = w / density
 
     for (let i = 0; i < w; i += space) {

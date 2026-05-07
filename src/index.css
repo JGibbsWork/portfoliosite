@@ -71,6 +71,7 @@ a:hover {
     background-color: var(--bg);
     display: flex;
     padding: 1.2vw;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
   .hometext {
@@ -85,6 +86,8 @@ a:hover {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-top: 0.4em;
+    white-space: nowrap;
+    min-width: 22vw;
   }
 
   .navLinks {
@@ -111,14 +114,14 @@ a:hover {
 
   .creative {
     margin: auto;
-    width: auto;
-    padding-top: 10%;
+    width: 83%;
+    padding-top: 3%;
   }
 
   .software {
     margin: auto;
-    width: auto;
-    padding-top: 10%;
+    width: 83%;
+    padding-top: 3%;
   }
 
   .pageConatiner {
@@ -127,6 +130,7 @@ a:hover {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     overflow-y: scroll;
+    overflow-x: hidden;
     animation: fadeIn 0.35s ease forwards;
   }
 
@@ -359,6 +363,103 @@ a:hover {
     font-style: italic;
   }
 
+  /* Editorial row layout */
+  .projectRow {
+    padding: 3rem 1.5rem;
+    border-bottom: 1px solid rgba(96, 204, 207, 0.2);
+  }
+
+  .projectRow:last-child {
+    border-bottom: none;
+  }
+
+  .projectRowInner {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .projectRowInner.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .projectMeta {
+    font-family: monospace;
+    font-size: 0.75vw;
+    color: rgba(96, 204, 207, 0.4);
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5rem;
+  }
+
+  .projectImageWrap {
+    flex: 0 0 45%;
+  }
+
+  .projectImageWrap img {
+    width: 100%;
+    display: block;
+  }
+
+  .projectTextWrap {
+    flex: 1;
+  }
+
+  .projectTitle {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+
+  .projectLinks {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .projectLink {
+    display: inline-block;
+    border: 1px solid var(--teal);
+    color: var(--teal);
+    padding: 0.5rem 1rem;
+    font-size: 0.75vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .projectLink:hover {
+    background-color: var(--teal);
+    color: var(--bg);
+  }
+
+  /* Trivlio placeholder */
+  .trivlioPlaceholder {
+    background-color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vw;
+  }
+
+  .trivlioPlaceholder span {
+    font-size: 1.5vw;
+    color: rgba(96, 204, 207, 0.2);
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  /* About pull quote */
+  .aboutPullQuote {
+    font-size: 2.2vw;
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
 }
 
 @media (orientation: portrait) {
@@ -379,6 +480,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 1.2vw;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
   }
 
   .hometext {
@@ -394,6 +496,8 @@ a:hover {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin-top: 0.4em;
+    white-space: nowrap;
+    min-width: 60vw;
   }
 
   .navLinks {
@@ -419,14 +523,14 @@ a:hover {
 
   .creative {
     margin: auto;
-    width: auto;
-    padding-top: 10%;
+    width: 78%;
+    padding-top: 15%;
   }
 
   .software {
     margin: auto;
-    width: auto;
-    padding-top: 5%;
+    width: 78%;
+    padding-top: 15%;
   }
 
   .pageConatiner {
@@ -434,6 +538,7 @@ a:hover {
     z-index: 1;
     padding-top: 2%;
     padding-bottom: 1.5rem;
+    overflow-x: hidden;
     animation: fadeIn 0.35s ease forwards;
   }
 
@@ -642,6 +747,104 @@ a:hover {
     font-size: 2.5vw;
     color: var(--silver);
     font-style: italic;
+  }
+
+  /* Editorial row layout - portrait */
+  .projectRow {
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid rgba(96, 204, 207, 0.2);
+  }
+
+  .projectRow:last-child {
+    border-bottom: none;
+  }
+
+  .projectRowInner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .projectRowInner.reverse {
+    flex-direction: column;
+  }
+
+  .projectMeta {
+    font-family: monospace;
+    font-size: 2.2vw;
+    color: rgba(96, 204, 207, 0.4);
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5rem;
+  }
+
+  .projectImageWrap {
+    width: 100%;
+  }
+
+  .projectImageWrap img {
+    width: 100%;
+    display: block;
+  }
+
+  .projectTextWrap {
+    width: 100%;
+  }
+
+  .projectTitle {
+    font-size: 8vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+
+  .projectLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .projectLink {
+    display: inline-block;
+    border: 1px solid var(--teal);
+    color: var(--teal);
+    padding: 0.6rem 1.2rem;
+    font-size: 2.2vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .projectLink:hover {
+    background-color: var(--teal);
+    color: var(--bg);
+  }
+
+  /* Trivlio placeholder - portrait */
+  .trivlioPlaceholder {
+    background-color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+  }
+
+  .trivlioPlaceholder span {
+    font-size: 3.5vw;
+    color: rgba(96, 204, 207, 0.2);
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  /* About pull quote - portrait */
+  .aboutPullQuote {
+    font-size: 4.5vw;
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
   }
 
 }

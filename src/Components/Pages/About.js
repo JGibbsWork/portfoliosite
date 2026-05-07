@@ -14,12 +14,12 @@ export default function About() {
           </Link>
             <h2 className="aboutTitle">HEY, I'M JAMES</h2>
               <div className="aboutMe">
-                <h4 className="aboutMe">I love making complex things feel personal.</h4>
+                <h4 className="aboutPullQuote">I love making complex things feel personal.</h4>
                 <p className="aboutMe">Hotels, casinos, developer tools, playlists, recommendation engines. If there's a medium, there's an opportunity to delight.</p>
                 <p className="aboutMe">I cut my teeth at Hard Rock designing sensory environments and brokering global partnerships. Hundreds of custom playlists, AV automations, scent profiling, custom video content, and larger-scale productions like light shows across entire gaming floors. A brand partnership I built with Crosley Record Players called Wax won the company's best brand idea that year.</p>
                 <p className="aboutMe">I pivoted into software engineering at JPMorgan, where I've spent nearly five years working on a cloud-native platform used by millions of customers — focused on DevOps, internal tooling, and release engineering at Fortune 10 scale. That said, my free time has more interesting highlights.</p>
                 <p className="aboutMe">To see a few examples of my personal software projects check here: <Link
-                  to={{ pathname: '/projects' }}
+                  to={{ pathname: '/work' }}
                   style={{ textDecoration: "none" }}
                   className="link">
                     <span>SOFTWARE PROJECTS</span>
