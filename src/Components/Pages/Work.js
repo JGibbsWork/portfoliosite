@@ -1,4 +1,4 @@
-import { FaArrowAltCircleLeft, FaSpotify } from "react-icons/fa"
+import { FaArrowAltCircleLeft, FaSpotify, FaExternalLinkAlt } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import Playlister from '../../Assets/stills/Playlister.png';
 import Dashboard from '../../Assets/stills/Dashboard.jpeg';
@@ -15,7 +15,7 @@ export default function Work() {
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
           </Link>
 
-          {/* Trivlio */}
+          {/* Trvlio */}
           <div className="projectRow">
             <div className="projectMeta">01</div>
             <div className="projectRowInner">
@@ -31,6 +31,12 @@ export default function Work() {
                   Built a multi-agent travel planning engine that clusters recommendations by neighborhood feel and proximity. Each agent handles a distinct planning concern — dining, lodging, activities — then a coordinator layer stitches results into a coherent itinerary shaped around how areas actually feel to move through.
                 </p>
                 <div className="projectStack">Node.js · Express · MongoDB · OpenAI · Docker · Heroku</div>
+                <div className="projectLinks">
+                  <a href="https://trvlio.com" target="_blank" rel="noreferrer" className="projectLink">
+                    <FaExternalLinkAlt style={{ marginRight: '0.5rem', verticalAlign: 'middle' }} />
+                    Trvlio
+                  </a>
+                </div>
               </div>
             </div>
           </div>
