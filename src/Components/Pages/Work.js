@@ -2,6 +2,7 @@ import { FaArrowAltCircleLeft, FaSpotify } from "react-icons/fa"
 import { Link } from 'react-router-dom';
 import Playlister from '../../Assets/stills/Playlister.png';
 import Dashboard from '../../Assets/stills/Dashboard.jpeg';
+import Trivlio from '../../Assets/stills/Trivlio.jpg';
 
 export default function Work() {
   return (
@@ -20,12 +21,10 @@ export default function Work() {
             <div className="projectMeta">01</div>
             <div className="projectRowInner">
               <div className="projectImageWrap">
-                <div className="trivlioPlaceholder">
-                  <span>People remember cities by how neighborhoods felt, not which landmarks they hit.</span>
-                </div>
+                <img src={Trivlio} alt="Trvlio recomendations" />
               </div>
               <div className="projectTextWrap">
-                <h2 className="projectTitle">Trivlio</h2>
+                <h2 className="projectTitle">Trvlio</h2>
                 <div className="projectInsight">
                   "People remember cities by how neighborhoods felt, not which landmarks they hit."
                 </div>
