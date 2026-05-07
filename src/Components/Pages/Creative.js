@@ -25,12 +25,12 @@ export default function Creative() {
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Multimedia / AV Work</h2>
                 <div className="projectInsight">
-                  "Scale and specificity aren't opposites — a 50ft LED screen can still feel personal."
+                  "Match the energy of the space. Or change it entirely."
                 </div>
                 <p className="projectDesc">
-                  Designed and produced large-scale audio-visual show pieces for a 50ft curved LED screen and LED guitar string monument at Hard Rock San Diego. Created immersive experiences for sales sites on the 28ft screen behind check-in, and built encompassing light show activations across the rooftop space. Each piece balanced spectacle with the intimate feel a hospitality environment demands.
+                  Designed and operated AV installations across a full hospitality property, from subtle time-of-day video playlists at check-in to a smoldering red and orange chandelier piece on the gaming floor that shifted to full RGB for promotional giveaways. Outdoor spaces got themed lighting treatments, branded, seasonal, and event-driven, that turned the property into a backdrop for whatever moment needed making. The job was always the same: read the room, then decide where to take it.
                 </p>
-                <div className="projectStack">LED Programming · After Effects · Audio Sync · Environmental Design</div>
+                <div className="projectStack">LED Programming · After Effects · Resolume · Premiere · Environmental Design</div>
               </div>
             </div>
           </div>
@@ -45,12 +45,12 @@ export default function Creative() {
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Music & Lifestyle Branding</h2>
                 <div className="projectInsight">
-                  "Won Hard Rock's best brand idea that year — a partnership that put vinyl in every room."
+                  "Every guest has a soundtrack. We just helped them play it."
                 </div>
                 <p className="projectDesc">
-                  Established a global partnership with Hard Rock Hotels and Crosley Radio to launch Sound of Your Stay's "WAX" addition — putting record players and curated vinyl in guest rooms worldwide. Curated over 50 playlists to play at specific times in specific spaces across the property. Produced pop-up events for special occasions and brokered partnerships with local radio stations for on-site artist interviews.
+                  Created WAX, an extension of Hard Rock's Sound of Your Stay program that brought curated vinyl and a Crosley record player directly to guests' rooms on request. Pick your genre (rock, soul, pop) and a bellstaff member would arrive with the player and a handpicked crate, yours for the rest of the stay. Built on the same instinct as the existing Fender guitar rental program, WAX gave guests a softer, more intimate way to make music part of their stay. The program won Hard Rock's best brand idea that year.
                 </p>
-                <div className="projectStack">Brand Strategy · Playlist Curation · Partnership Development · Event Production</div>
+                <div className="projectStack">Brand Strategy · Partnership Development · Playlist Curation · Event Production</div>
                 <div className="projectLinks">
                   <a href="https://www.hardrockhotels.com/sound-of-your-stay.aspx" target="_blank" rel="noreferrer" className="projectLink">
                     <FaExternalLinkAlt style={{ marginRight: '0.5rem', verticalAlign: 'middle' }} />
@@ -79,12 +79,12 @@ export default function Creative() {
               <div className="projectTextWrap">
                 <h2 className="projectTitle">Lyric Videos</h2>
                 <div className="projectInsight">
-                  "A lyric video isn't karaoke — it's a chance to extend the song's world."
+                  "Great songs deserve more than a static image."
                 </div>
                 <p className="projectDesc">
-                  Conceptualized and created lyric videos, along with accompanying social media assets, for songs released by independent artists Royal Teeth (Round Hill Records), Post Precious (side project of Max Hershenow of MS MR + veteran singer/songwriter Alex Winston), and Yoke Lore. Ranging from singles and albums to visuals for karaoke-themed listening parties.
+                  Created lyric videos and social assets for independent artists Royal Teeth, Post Precious, and Yoke Lore, working directly with each artist to translate their vision into motion. Ranged from clean kinetic typography to hand-drawn overlapping styles to animated album artwork, built on quick turnarounds without sacrificing the feel of the track.
                 </p>
-                <div className="projectStack">After Effects · Typography · Motion Graphics · Social Media Assets</div>
+                <div className="projectStack">After Effects · Motion Graphics · Typography · Social Media Assets</div>
               </div>
             </div>
           </div>
