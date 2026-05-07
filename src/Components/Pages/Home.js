@@ -6,7 +6,6 @@ const descriptors = [
   'Senior Software Engineer',
   'Experience Designer',
   'Music Snob',
-  'Distant Relative of Paul Bunyon',
   'Vibe Manager',
   'Creative Technologist',
   'Emergency DJ',
@@ -58,29 +57,29 @@ export default function Home() {
               <Link to="/work"
               style={{ textDecoration: "none"}}
               className="link" >
-                <h3>PROJECTS</h3>
+                <h3>CODE</h3>
               </Link>
             </div>
             <div>
               <Link to="/creative"
               style={{ textDecoration: "none"}}
               className="link" >
-                <h3>CREATIVE</h3>
+                <h3>CRAFT</h3>
               </Link>
             </div>
           </div>
           <div className="iconLinks" >
-            <div className="icons" id="homeLink">
+            <div className="icons homeLink">
               <a href="https://www.linkedin.com/in/jgibbswork/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
                 <FaLinkedin aria-hidden="true" />
               </a>
             </div>
-            <div className="icons" id="homeLink">
+            <div className="icons homeLink">
               <a href="https://github.com/JGibbsWork" target="_blank" rel="noreferrer" aria-label="GitHub profile">
                 <FaGithubSquare aria-hidden="true" />
               </a>
             </div>
-            <div className="icons" id="homeLink">
+            <div className="icons homeLink">
               <a href="mailto:james.gibbs@me.com" target="_blank" rel="noreferrer" aria-label="Send email">
                 <FaEnvelope aria-hidden="true" />
               </a>

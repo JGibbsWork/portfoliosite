@@ -13,6 +13,7 @@ export default function Creative() {
             className="link">
             <FaArrowAltCircleLeft className="back" size="1.5rem" />
           </Link>
+            <h2 className="pageTitle">CRAFT</h2>
 
           {/* Multimedia / AV Work */}
           <div className="projectRow">
